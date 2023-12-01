@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="aos.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar bg-verde fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header bg-verde">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-amarillo">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cards">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Juego.html">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <header class="container-fluid mt-6 bg-fondo text-center">
+      <div class="row animate__animated" id="home">
+        <div class="col-lg-6 position-relative mt-4 ">
+          <img src="LogoDS.png" class="float-start rounde img-cabeza" id="" alt="...">
+        </div>
+        <div class="col-lg-6">
+          <div class="content d-flex flex-column justify-content-center h-100">
+            <article>
+              <h1>Quienes somos como empresa?</h1>
+              <p class="fst-italic h4 text-justify">
+                Divine Software es una empresa dedicada al desarrollo de juegos tipo 2D con un arte de pixel art. Actualmente nos encontramos dessarrollando "The eternal search" 
+              </p>
+              <p class="fst-italic h4 text-justify">
+                Nos encanta trabajar en base a las ideas de todo nuestro equipo de trabajadores ya  que ellos contribuyen gran parte de nuestro trabajo. 
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div class="container-fluid bg-fondo">
+            <div class="row">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div id="carouselExampleSlidesOnly" class="carousel slide mt-4" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://sm.ign.com/ign_es/screenshot/default/moonlighter-screenshot2-logo-4-1488246415531_219850_74qq.jpg" class="d-block w-100 " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://www.somosxbox.com/wp-content/uploads/2023/01/indies-2023-6-somosxbox.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://i.pinimg.com/736x/e2/5e/1f/e25e1f4963d909a8fc1b7d2d86c5a7df.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="card-group mt-4" id="cards">
+                <div class="card animate__animated">
+                  <img src="https://allgamersin.com/wp-content/uploads/2022/01/Airoheart_Screenshot_1.jpg" class="card-img-top img-card" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card animate__animated">
+                  <img src="https://static.vecteezy.com/system/resources/previews/028/747/557/non_2x/pixel-game-rpg-games-logo-title-text-vector.jpg" class="card-img-top img-card" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card animate__animated">
+                  <img src="tes.png" class="card-img-top img-card" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              <article>
+              <div class="row text-center text-justify mt-4 justify-content-center">
+                <h1>Las novedades sobre nuestro ultimo juego</h1>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <!-- Acordeón 1 -->
+                  <div class="accordion-item" data-aos="fade-up">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                              aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                              Patch 17.0.1
+                          </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                          <div class="accordion-body row">
+                              <div class="col-md-8">
+                                  <strong>This is the first item's accordion body.</strong> It is shown by default
+                                  until the collapse plugin adds the appropriate classes that we use to style each
+                                  element. These classes control the overall appearance, as well as the showing and
+                                  hiding via CSS transitions. You can modify any of this with custom CSS or
+                                  overriding our default variables. It's also worth noting that just about any HTML
+                                  can go within the <code>.accordion-body</code>, though the transition does limit
+                                  overflow.
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="https://i.pinimg.com/736x/c1/86/71/c1867167fc311a0f8ba94f2d9c550135.jpg"
+                                      class="img-acordion img-fluid" alt="Image">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Acordeón 2 -->
+                  <div class="accordion-item" data-aos="fade-up">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                              aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                              Patch 17.0.2
+                          </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                          <div class="accordion-body row">
+                              <div class="col-md-8">
+                                  <strong>This is the second item's accordion body.</strong> It is shown by default
+                                  until the collapse plugin adds the appropriate classes that we use to style each
+                                  element. These classes control the overall appearance, as well as the showing and
+                                  hiding via CSS transitions. You can modify any of this with custom CSS or
+                                  overriding our default variables. It's also worth noting that just about any HTML
+                                  can go within the <code>.accordion-body</code>, though the transition does limit
+                                  overflow.
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="https://example.com/image2.jpg" class="img-acordion img-fluid" alt="Image 2">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Acordeón 3 -->
+                  <div class="accordion-item" data-aos="fade-up">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                              aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                              Patch 17.0.3
+                          </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                          <div class="accordion-body row">
+                              <div class="col-md-8">
+                                  <strong>This is the third item's accordion body.</strong> It is shown by default
+                                  until the collapse plugin adds the appropriate classes that we use to style each
+                                  element. These classes control the overall appearance, as well as the showing and
+                                  hiding via CSS transitions. You can modify any of this with custom CSS or
+                                  overriding our default variables. It's also worth noting that just about any HTML
+                                  can go within the <code>.accordion-body</code>, though the transition does limit
+                                  overflow.
+                              </div>
+                              <div class="col-md-4">
+                                  <img src="https://example.com/image3.jpg" class="img-acordion img-fluid" alt="Image 3">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>   
+              </div>
+              </article>
+              <article>
+              <div class="container mt-5">
+                <h2 class="text-center mb-4">Tabla con Animaciones</h2>
+        
+                <div class="table-responsive">
+                    <div class="table-container">
+                        <table class="table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Fila 1 -->
+                            <tr data-aos="fade-up" data-aos-delay="0">
+                                <td><img src="imagen1.jpg" class="img-thumbnail" alt="Imagen 1"></td>
+                                <td>Nombre 1</td>
+                                <td>Descripción del elemento 1.</td>
+                            </tr>
+        
+                            <!-- Fila 2 -->
+                            <tr data-aos="fade-up" data-aos-delay="100">
+                                <td><img src="imagen2.jpg" class="img-thumbnail" alt="Imagen 2"></td>
+                                <td>Nombre 2</td>
+                                <td>Descripción del elemento 2.</td>
+                            </tr>
+        
+                            <!-- Fila 3 -->
+                            <tr data-aos="fade-up" data-aos-delay="200">
+                                <td><img src="imagen3.jpg" class="img-thumbnail" alt="Imagen 3"></td>
+                                <td>Nombre 3</td>
+                                <td>Descripción del elemento 3.</td>
+                            </tr>
+        
+                            <!-- Fila 4 -->
+                            <tr data-aos="fade-up" data-aos-delay="300">
+                                <td><img src="imagen4.jpg" class="img-thumbnail" alt="Imagen 4"></td>
+                                <td>Nombre 4</td>
+                                <td>Descripción del elemento 4.</td>
+                            </tr>
+        
+                            <!-- Fila 5 -->
+                            <tr data-aos="fade-up" data-aos-delay="400">
+                                <td><img src="imagen5.jpg" class="img-thumbnail" alt="Imagen 5"></td>
+                                <td>Nombre 5</td>
+                                <td>Descripción del elemento 5.</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+              </article>  
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-footer" id="footer">
+      <div class="p-footer-inner">
+        <div class="p-footer-columns">
+          <div class="p-footer-column">
+            <h3><i class="fas fa-caret-square-right"></i> About Us</h3>
+            Starting out as a YouTube channel making Minecraft Adventure Maps, Hypixel is now one of the largest and highest quality Minecraft Server Networks in the world, featuring original games such as The Walls, Mega Walls, Blitz Survival Games, and many more!
+          </div>
+          <div class="p-footer-column">
+            <h3><i class="fas fa-info-circle"></i> Useful Links</h3>
+            <ul class="p-footer-useful-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/rules/">Rules &amp; Policies</a></li>
+              <li><a href="https://support.hypixel.net">Support</a></li>
+              <li><a href="https://status.hypixel.net">Status</a></li>
+              <li><a href="/jobs/">Jobs</a></li>
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="p-footer-column">
+            <h3><i class="fab fa-facebook-square"></i> Like us on Facebook</h3>
+            <div class="p-footer-blue">
+              <a href="https://www.facebook.com/Hypixel/" target="_blank" rel="noopener"><img src="/styles/hypixel-v2/images/footer/blue-avatar.png" class="p-footer-blue-avatar"></a>
+              <a href="https://www.facebook.com/Hypixel/" target="_blank" rel="noopener" class="p-footer-blue-header">Hypixel Server Network for Minecraft</a>
+              <a href="https://www.facebook.com/Hypixel/" target="_blank" rel="noopener" class="p-footer-blue-like"><i class="fab fa-facebook-square"></i> <span>Like Page</span></a>
+            </div>
+          </div>
+          <div class="p-footer-column">
+            <h3><i class="fas fa-shopping-cart"></i> Hypixel Store</h3>
+            The administration works very hard to bring you unique, originally created content. Purchasing ranks, boosters, and mystery boxes helps support us in making more, higher quality content.
+            <br><br>
+            <a class="callToAction" href="https://store.hypixel.net/">Visit the store</a>
+            <ul class="social-links" style="margin: 30px 0 0 0; text-align: center;">
+              <li class="facebook"><a href="https://www.facebook.com/Hypixel" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="twitter"><a href="https://twitter.com/HypixelNetwork" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+              <li class="instagram"><a href="https://instagram.com/hypixelofficial" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li class="tiktok"><a href="https://tiktok.com/@hypixel" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+              <li class="youtube"><a href="https://www.youtube.com/user/Hypixel" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
+              <li class="contact"><a href="https://support.hypixel.net/" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a></li>
+              <li class="rss"><a href="-/index.rss" rel="alternate" target="_blank"><i class="fas fa-rss"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+      <div class="p-footer-lower">
+        <div class="p-footer-inner">
+          <div class="p-footer-copyright">
+            © 2023 Hypixel Inc. All Rights Reserved.
+          </div>
+    
+          
+        </div>
+      </div>
+    </footer>
+
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="aos.js"></script>
+
+</body>
+
+</html>
