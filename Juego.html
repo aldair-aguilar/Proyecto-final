@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="aos.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar bg-verde fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header bg-verde">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-amarillo">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cards">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Juego.html">Action</a></li>
+                      <li><a class="dropdown-item" href="Index.html">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <header class="container-fluid mt-6 bg-fondo text-center">
+      <div class="row animate__animated" id="home">
+        <div class="col-lg-6 position-relative mt-4 ">
+          <img src="LogoDS.png" class="float-start rounde img-cabeza" id="" alt="...">
+        </div>
+        <div class="col-lg-6">
+          <div class="content d-flex flex-column justify-content-center h-100">
+            <article>
+              <h1>Quienes somos como empresa?</h1>
+              <p class="fst-italic h4 text-justify">
+                Divine Software es una empresa dedicada al desarrollo de juegos tipo 2D con un arte de pixel art. Actualmente nos encontramos dessarrollando "The eternal search" 
+              </p>
+              <p class="fst-italic h4 text-justify">
+                Nos encanta trabajar en base a las ideas de todo nuestro equipo de trabajadores ya  que ellos contribuyen gran parte de nuestro trabajo. 
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+        <div>
+            <section class="containerr text-center mt-5" data-aos="fade-up">
+                <h2 class="display-4 mb-4">Texto Centrado</h2>
+                <p class="lead">Este es un párrafo de ejemplo. Puedes agregar más contenido aquí y personalizar según tus necesidades.</p>
+            </section>            
+        </div>
+    </main>
+    <footer class="p-footer justify-content-center" id="footer">
+      <div class="p-footer-inner">
+        <div class="p-footer-columns">
+          <div class="p-footer-column">
+            <h3><i class="fas fa-caret-square-right"></i> About Us</h3>
+            Starting out as a YouTube channel making Minecraft Adventure Maps, Hypixel is now one of the largest and highest quality Minecraft Server Networks in the world, featuring original games such as The Walls, Mega Walls, Blitz Survival Games, and many more!
+          </div>
+          <div class="p-footer-column">
+            <h3><i class="fab fa-facebook-square"></i> Like us on Facebook</h3>
+            <div class="p-footer-blue">
+              <a href="https://www.facebook.com/Hypixel/" target="_blank" rel="noopener"><img src="/styles/hypixel-v2/images/footer/blue-avatar.png" class="p-footer-blue-avatar"></a>
+              <a href="https://www.facebook.com/Hypixel/" target="_blank" rel="noopener" class="p-footer-blue-header">Hypixel Server Network for Minecraft</a>
+              <a href="https://www.facebook.com/Hypixel/" target="_blank" rel="noopener" class="p-footer-blue-like"><i class="fab fa-facebook-square"></i> <span>Like Page</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="p-footer-lower">
+        <div class="p-footer-inner">
+          <div class="p-footer-copyright">
+            © 2023 Hypixel Inc. All Rights Reserved.
+          </div>
+    
+          
+        </div>
+      </div>
+    </footer>
+
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="aos.js"></script>
+
+</body>
+
+</html>
