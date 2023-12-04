@@ -129,7 +129,7 @@
 
 .P-TI{
     margin-top: 5rem;
-    margin-bottom: 20rem;
+    margin-bottom: 5rem;
 }
 
 .m-c2{
@@ -138,4 +138,16 @@
 
 .mt-articulo{
     margin-top: 6rem;
+}
+
+.mt-form{
+    margin-top: 5rem;
+}
+
+.mt-btn{
+    margin-top: 2rem;
+}   
+
+.mt-car{
+    margin-top: 8rem;
 }
