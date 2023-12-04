@@ -1,3 +1,33 @@
+$(document).ready(function () {
+   // Función para verificar si un elemento es visible en la pantalla
+   function isElementInViewport(el) {
+      var rect = el[0].getBoundingClientRect();
+      return (
+         rect.top >= 0 &&
+         rect.bottom <= $(window).height()
+      );
+   }
+
+   // Variable para controlar si la animación ya ha ocurrido
+   var animationOccurredHome = false;
+
+   $(window).scroll(function () {
+      // Verifica si la sección con id "home" es visible
+      if (isElementInViewport($("#home"))) {
+         // Establece la animación de entrada con un retraso de 200 ms
+         if (!animationOccurredHome) {
+            setTimeout(function () {
+               $("#home").addClass("animate__rotateInUpLeft");
+            }, 1);
+            animationOccurredHome = true; // Marca que la animación ha ocurrido
+         }
+      } else {
+         // Reinicia la animación si el elemento no es visible
+         $("#home").removeClass("animate__rotateInUpLeft");
+         animationOccurredHome = false; // Reinicia la marca de animación
+      }
+   });
+});
 
 // Trajetas animacion
 
