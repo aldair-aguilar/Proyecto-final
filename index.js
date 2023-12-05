@@ -138,3 +138,5 @@ AOS.init({
    offset: 100, // Ajusta según sea necesario
    duration: 1000 // Ajusta según sea necesario
 });
+
+
