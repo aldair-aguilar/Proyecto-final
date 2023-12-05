@@ -97,10 +97,6 @@ $(document).ready(function () {
    AOS.init();
 });
 
-{
-   AOS.init();
-}
-
 document.addEventListener("DOMContentLoaded", function () {
    AOS.init();
 });
