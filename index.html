@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animate.min.css">
     <link rel="stylesheet" href="aos.css">
+    <script src="https://kit.fontawesome.com/13cac291ac.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <nav class="navbar bg-verde fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <a class="navbar-brand" href="#"><img src="LogoDS.png" alt="Logo" width="40" height="50" class="d-inline-block">
+              Divine Software</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header bg-verde">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Todo sobre nosotros</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body bg-amarillo">
@@ -30,19 +32,21 @@
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#cards">Link</a>
+                    <a class="nav-link" href="#cards">Todos los juegos que tenemos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#accordionPanelsStayOpenExample">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tabla">Lista de los mejores objetos de nuestro ultimo juego</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Otras paginas
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="Juego.html">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="index.html">Home</a></li>
+                      <li><a class="dropdown-item" href="Juego.html">Todo sobre The Eternal Search</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -102,191 +106,219 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+
+              <!-- Cards -->
+
+              <p class="h1 text-center mt-4 mb-comprar" data-aos="fade-right">Nuestros juegos</p>
               <div class="card-group mt-4" id="cards">
-                <div class="card animate__animated">
+                <div class="card dropup animate__animated">
                   <img src="https://allgamersin.com/wp-content/uploads/2022/01/Airoheart_Screenshot_1.jpg" class="card-img-top img-card" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  <div class="card-body text-center text-justify">
+                    <h5 class="card-title">Airoheart</h5>
+                    <p class="card-text">Es un RPG de aventura con vista cenital inspirado en los juegos clásicos. Embárcate en una aventura épica para salvar al mundo del mal y pon a prueba la fuerza de tu corazón en esta emotiva historia de traición, tragedia y redención.</p>
+                    <p class="card-text"><small class="text-body-secondary">Disponible en Xbox, PS, PS5, Xbox S/X, PC, SWITCH</small></p>
+                    <!-- Botones desplegables -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Comprar
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.nintendo.com/es-mx/store/products/airoheart-switch/">Nintendo</a></li>
+                        <li><a class="dropdown-item" href="https://store.steampowered.com/app/1493940/Airoheart/">Steam</a></li>
+                        <li><a class="dropdown-item" href="https://www.xbox.com/es-MX/games/store/airoheart/9PD91WRDFKND">Xbox</a></li>
+                        <li><a class="dropdown-item" href="https://store.playstation.com/es-hn/product/UP1470-CUSA32392_00-AIROHEARTUS00000">PS</a></li>
+                        <!-- Agrega más enlaces según sea necesario -->
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="card animate__animated">
-                  <img src="https://static.vecteezy.com/system/resources/previews/028/747/557/non_2x/pixel-game-rpg-games-logo-title-text-vector.jpg" class="card-img-top img-card" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                
+                <div class="card dropup animate__animated">
+                  <img src="https://cdn1.epicgames.com/offer/bec822fb982843c3be794d440728336b/Moonlighter_Landscape_Image_2560x1440_2560x1440-f29e5f2829eee173e9d0605d6715d8c0" class="card-img-top img-card" alt="...">
+                  <div class="card-body text-center text-justify">
+                    <h5 class="card-title">Moonlighter</h5>
+                    <p class="card-text">Moonlighter es un juego de acción RPG con elementos rogue-lite. Descubre la rutina diaria de Will, un comerciante aventurero que sueña con convertirse en un héroe.</p>
+                    <p class="card-text"><small class="text-body-secondary">Disponible en Xbox, PS, PS5, Xbox S/X, PC, SWITCH</small></p>
+                    <!-- Botones desplegables -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Comprar
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://store.steampowered.com/app/606150/Moonlighter/">Steam</a></li>
+                        <li><a class="dropdown-item" href="https://www.nintendo.com/es-mx/store/products/moonlighter-switch/">Nintendo</a></li>
+                        <li><a class="dropdown-item" href="https://www.xbox.com/es-MX/games/store/moonlighter/9P8XJRLCLH2P">Xbox</a></li>
+                        <li><a class="dropdown-item" href="https://store.playstation.com/es-es/product/EP4361-CUSA10138_00-0000000000000001">PS</a></li>
+                        <!-- Agrega más enlaces según sea necesario -->
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </div>        
                 <div class="card animate__animated">
                   <img src="tes.png" class="card-img-top img-card" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  <div class="card-body text-justify text-center">
+                    <h5 class="card-title">The Eternal Search</h5>
+                    <p class="card-text">The Eternal Search es un juego RPG inspirado en varios juegos clasicos. Donde te embarcaras en una aventura en un mundo de fantasia y atravesaras varios mundos para poder salvar la realidad y a tu familia.</p>
+                    <p class="card-text"><small class="text-body-secondary">Proximamente en todas las plataformas</small></p>
                   </div>
                 </div>
               </div>
-              <article>
-              <div class="row text-center text-justify mt-4 justify-content-center">
-                <h1>Las novedades sobre nuestro ultimo juego</h1>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                  <!-- Acordeón 1 -->
-                  <div class="accordion-item" data-aos="fade-up">
-                      <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                              aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                              Patch 17.0.1
-                          </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                          <div class="accordion-body row">
-                              <div class="col-md-8">
-                                  <strong>This is the first item's accordion body.</strong> It is shown by default
-                                  until the collapse plugin adds the appropriate classes that we use to style each
-                                  element. These classes control the overall appearance, as well as the showing and
-                                  hiding via CSS transitions. You can modify any of this with custom CSS or
-                                  overriding our default variables. It's also worth noting that just about any HTML
-                                  can go within the <code>.accordion-body</code>, though the transition does limit
-                                  overflow.
-                              </div>
-                              <div class="col-md-4">
-                                  <img src="https://i.pinimg.com/736x/c1/86/71/c1867167fc311a0f8ba94f2d9c550135.jpg"
-                                      class="img-acordion img-fluid" alt="Image">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+              
+              <!-- Aca acaban las cards -->
 
-                  <!-- Acordeón 2 -->
-                  <div class="accordion-item" data-aos="fade-up">
-                      <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                              aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                              Patch 17.0.2
-                          </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                          <div class="accordion-body row">
-                              <div class="col-md-8">
-                                  <strong>This is the second item's accordion body.</strong> It is shown by default
-                                  until the collapse plugin adds the appropriate classes that we use to style each
-                                  element. These classes control the overall appearance, as well as the showing and
-                                  hiding via CSS transitions. You can modify any of this with custom CSS or
-                                  overriding our default variables. It's also worth noting that just about any HTML
-                                  can go within the <code>.accordion-body</code>, though the transition does limit
-                                  overflow.
-                              </div>
-                              <div class="col-md-4">
-                                  <img src="https://example.com/image2.jpg" class="img-acordion img-fluid" alt="Image 2">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+              <!-- Acordeon -->
 
-                  <!-- Acordeón 3 -->
-                  <div class="accordion-item" data-aos="fade-up">
-                      <h2 class="accordion-header">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                              aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                              Patch 17.0.3
-                          </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                          <div class="accordion-body row">
-                              <div class="col-md-8">
-                                  <strong>This is the third item's accordion body.</strong> It is shown by default
-                                  until the collapse plugin adds the appropriate classes that we use to style each
-                                  element. These classes control the overall appearance, as well as the showing and
-                                  hiding via CSS transitions. You can modify any of this with custom CSS or
-                                  overriding our default variables. It's also worth noting that just about any HTML
-                                  can go within the <code>.accordion-body</code>, though the transition does limit
-                                  overflow.
-                              </div>
-                              <div class="col-md-4">
-                                  <img src="https://example.com/image3.jpg" class="img-acordion img-fluid" alt="Image 3">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>   
-              </div>
-              </article>
               <article>
-              <div class="container mt-5">
-                <h2 class="text-center mb-4">Tabla con Animaciones</h2>
-        
-                <div class="table-responsive">
-                    <div class="table-container">
-                        <table class="table table-bordered table-striped">
-                          <thead>
-                            <tr>
-                                <th scope="col">Imagen</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Descripción</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Fila 1 -->
-                            <tr data-aos="fade-up" data-aos-delay="0">
-                                <td><img src="imagen1.jpg" class="img-thumbnail" alt="Imagen 1"></td>
-                                <td>Nombre 1</td>
-                                <td>Descripción del elemento 1.</td>
-                            </tr>
-        
-                            <!-- Fila 2 -->
-                            <tr data-aos="fade-up" data-aos-delay="100">
-                                <td><img src="imagen2.jpg" class="img-thumbnail" alt="Imagen 2"></td>
-                                <td>Nombre 2</td>
-                                <td>Descripción del elemento 2.</td>
-                            </tr>
-        
-                            <!-- Fila 3 -->
-                            <tr data-aos="fade-up" data-aos-delay="200">
-                                <td><img src="imagen3.jpg" class="img-thumbnail" alt="Imagen 3"></td>
-                                <td>Nombre 3</td>
-                                <td>Descripción del elemento 3.</td>
-                            </tr>
-        
-                            <!-- Fila 4 -->
-                            <tr data-aos="fade-up" data-aos-delay="300">
-                                <td><img src="imagen4.jpg" class="img-thumbnail" alt="Imagen 4"></td>
-                                <td>Nombre 4</td>
-                                <td>Descripción del elemento 4.</td>
-                            </tr>
-        
-                            <!-- Fila 5 -->
-                            <tr data-aos="fade-up" data-aos-delay="400">
-                                <td><img src="imagen5.jpg" class="img-thumbnail" alt="Imagen 5"></td>
-                                <td>Nombre 5</td>
-                                <td>Descripción del elemento 5.</td>
-                            </tr>
-                        </tbody>
-                        </table>
+                <div class="row text-center text-justify mt-4 justify-content-center">
+                  <h1 data-aos="fade-right">Las novedades sobre nuestro ultimo juego</h1>
+                  <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <!-- Acordeón 1 -->
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                Patch 17.0.1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body row">
+                                <div class="col-md-8">
+                                    <p class="text-justify h4 text-secondary">En esta actualización se añadieron los siguientes cambios: Actualizamos el render que tienen ciertos mapas para que se vean mejor y esten mejores optimizados, se añadieron nuevos enemigos, se añadieron nuevos objetos, se añadieron nuevas misiones, se añadieron nuevos personajes, se añadieron nuevos mapas, y se corrigieron varios bugs en varias zonas iniciales.</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="https://i.pinimg.com/736x/c1/86/71/c1867167fc311a0f8ba94f2d9c550135.jpg"
+                                        class="img-acordion img-fluid" alt="Image">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Acordeón 2 -->
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Patch 17.0.2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body row">
+                                <div class="col-md-8">
+                                  <p class="text-justify h4 text-secondary">En esta actualización añadimos nuevas animaciones a los enemigos para darle un  toque mas entretenido al igual que se terminaron de añadir las ultimas funcions de ciertos objetos utiles en la partida. Por ultimo se arreglo ciertos bugs que no permitian al usuario avanzar en el antepenultimo mundo</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="https://img.itch.zone/aW1nLzEzOTgxMzM4LmdpZg==/original/sdLoDg.gif" class="img-acordion img-fluid" alt="Image 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acordeón 3 -->
+                    <div class="accordion-item" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Patch 17.0.3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body row">
+                                <div class="col-md-8">
+                                  <p class="text-justify h4 text-secondary">
+                                    En esta actualización se añadieron nuevos objetos, se añadieron nuevas misiones, se añadieron nuevos personajes, se añadieron nuevos mapas, y se termino de pulir la zona final. Por ultimo se arreglo ciertos bugs y se haran pruebas para poder lanzar la beta abierta en los proximos meses para que los usuarios puedan probar el juego y dar su opinion sobre el mismo.
+                                  </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="https://img.itch.zone/aW1hZ2UvNDUwMzAyLzIyNzk4NDEucG5n/794x1000/VwuX5G.png" class="img-acordion img-fluid" alt="Image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>   
                 </div>
-            </div>
-              </article>  
+              </article>
+
+              <!-- Aca acaba el acordeon -->
+
+              <!-- Tabla -->
+
+              <article>
+                <div class="container mt-5">
+                  <h2 class="text-center mb-4" data-aos="fade-right">Lista de los mejores objetos de nuestro ultimo juego</h2>
+          
+                  <div class="table-responsive">
+                      <div class="table-container">
+                          <table class="table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                  <th scope="col">Imagen</th>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Descripción</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <!-- Fila 1 -->
+                              <tr data-aos="fade-up" data-aos-delay="0">
+                                  <td><img src="imagen1.jpg" class="img-thumbnail" alt="Imagen 1"></td>
+                                  <td>Nombre 1</td>
+                                  <td>Descripción del elemento 1.</td>
+                              </tr>
+          
+                              <!-- Fila 2 -->
+                              <tr data-aos="fade-up" data-aos-delay="100">
+                                  <td><img src="imagen2.jpg" class="img-thumbnail" alt="Imagen 2"></td>
+                                  <td>Nombre 2</td>
+                                  <td>Descripción del elemento 2.</td>
+                              </tr>
+          
+                              <!-- Fila 3 -->
+                              <tr data-aos="fade-up" data-aos-delay="200">
+                                  <td><img src="imagen3.jpg" class="img-thumbnail" alt="Imagen 3"></td>
+                                  <td>Nombre 3</td>
+                                  <td>Descripción del elemento 3.</td>
+                              </tr>
+          
+                              <!-- Fila 4 -->
+                              <tr data-aos="fade-up" data-aos-delay="300">
+                                  <td><img src="imagen4.jpg" class="img-thumbnail" alt="Imagen 4"></td>
+                                  <td>Nombre 4</td>
+                                  <td>Descripción del elemento 4.</td>
+                              </tr>
+          
+                              <!-- Fila 5 -->
+                              <tr data-aos="fade-up" data-aos-delay="400">
+                                  <td><img src="imagen5.jpg" class="img-thumbnail" alt="Imagen 5"></td>
+                                  <td>Nombre 5</td>
+                                  <td>Descripción del elemento 5.</td>
+                              </tr>
+                          </tbody>
+                          </table>
+                      </div>
+                  </div>
+                </div>
+              </article> 
+              
+              <!-- Aca acaba la tabla -->
+              
             </div>
         </div>
     </main>
     <footer>
-    <div class="container-fluid justify-content-center text-center">
-      <div class="row p-3 bg-footer">
-        <div class="col-xs-12 col-md-4 col-lg-6">
-          <p class="h3">Como empezamos</p>
-          <p class="text-secondary">Empezamos cuando el fundador tuvo la idea de crear videojuegos y de hacerlo con un grupo de amigos, entonces cuando esta idea surge decide juntar a ese grupo de amigos y empezar una lluvia de ideas parta crear su primer juego Airoheart, un juego con estilo de arte PIXEL ART y un gamplay RPG que haria que la empresa se ponga en el mapa y a dia de hoy es una empresa de juegos indie reconocida y que trabaja acxtualmente en su mejor obra</p>
+      <div class="container-fluid justify-content-center text-center text-justify">
+        <div class="row p-3 bg-footer">
+          <div class="col-xs-12 col-md-4 col-lg-6">
+            <p class="h3">Como empezamos</p>
+            <p class="text-secondary text-justify">Empezamos cuando el fundador tuvo la idea de crear videojuegos y de hacerlo con un grupo de amigos, entonces cuando esta idea surge decide juntar a ese grupo de amigos y empezar una lluvia de ideas parta crear su primer juego Airoheart, un juego con estilo de arte PIXEL ART y un gamplay RPG que haria que la empresa se ponga en el mapa y a dia de hoy es una empresa de juegos indie reconocida y que trabaja acxtualmente en su mejor obra</p>
+          </div>
+          <div class="col-xs-12 col-md-4 col-lg-6 text-center">
+            <p class="h3">Síguenos en nuestras redes sociales</p>
+            <ul class="bg-footer text-center list-group">
+                <a href="https://www.instagram.com/divinesoftware1/"><li class="list-group-item"><i class="fa-brands fa-instagram"></i> Instagram</li></a>
+                <li class="list-group-item"><i class="fab fa-facebook"></i> Facebook</li>
+            </ul>
         </div>
-        <div class="col-xs-12 col-md-4 col-lg-6">
-          <p class="h3">Sigenos en nuestras redes sociales</p>
-          <ul class="bg-footer">
-            <li class="list-group-item">A disabled item</li>
-            <li class="list-group-item">A second item</li>
-          </ul>
         </div>
       </div>
-    </div>
     </footer>
 
     <script src="jquery-3.5.1.slim.min.js"></script>

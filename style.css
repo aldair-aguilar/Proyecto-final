@@ -151,3 +151,52 @@
 .mt-car{
     margin-top: 8rem;
 }
+
+/* En tu archivo style.css o dentro del bloque <style> en el head del HTML */
+.mt-btn button {
+    margin: 10px; /* Ajusta según sea necesario */
+ }
+
+ 
+ .mb-comprar{
+    margin-top: 30rem;
+ }
+ 
+  /* Ajustes específicos para las tarjetas y el menú desplegable */
+  .card {
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropup .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: all 0.3s ease; /* Agregamos una transición para una apariencia más suave */
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }

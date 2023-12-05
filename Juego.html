@@ -16,13 +16,15 @@
     <div class="container-fluid">
         <nav class="navbar bg-verde fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Divine Software</a>
+            <a class="navbar-brand" href="#">
+              <img src="LogoDS.png" alt="Logo" width="40" height="50" class="d-inline-block ">
+              Divine Software</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header bg-verde">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">The Eternal Search</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body bg-amarillo">
@@ -31,25 +33,24 @@
                     <a class="nav-link active" aria-current="page" href="#Como-se-creo">Como se creo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Historia">Historia</a>
+                    <a class="nav-link active" href="#Historia">Historia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Plataformas">Plataformas</a>
+                    <a class="nav-link active" href="#Referencias">Referencias</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#Form">Registro</a>
+                    <a class="nav-link active" href="#Plataformas">Plataformas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#Form">Registro</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Otras paginas
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="Juego.html">Action</a></li>
-                      <li><a class="dropdown-item" href="index.html">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="Juego.html">Todo sobre The Eternal Search</a></li>
+                      <li><a class="dropdown-item" href="index.html">Home</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -60,7 +61,7 @@
     </div>
     <header class="container-fluid mt-6 mb-2 bg-fondo text-center">
       
-      <div id="carouselExampleCaptions" class="carousel slide mt-car" >
+      <div id="carouselExampleCaptions" class="carousel slide mt-car">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -89,13 +90,11 @@
         </button>
       </div>
     </header>
-    <main class="bg-fondo P-TI">
+    <main class="bg-fondo P-TI container-fluid" style="overflow: hidden;">
       <!--Aqui va el contenido DE LA PAGINA-->
 
-      <P class="text-center display-3 mt-3" data-aos="fade-down-left">Todo sobre THE ETERNAL SERACH</P>
-      <div class="container-fluid historia-section mt-5" data-aos="fade-left"
-      data-aos-offset="500"
-      data-aos-duration="500" id="Como-se-creo">
+      <P class="text-center display-3 mt-3" data-aos="flip-up">Todo sobre THE ETERNAL SERACH</P>
+      <div class="container-fluid historia-section mt-5" data-aos="flip-down" id="Como-se-creo">
         <div class="row justify-content-center mt-articulo" >
           <div class="col-lg-6">
             <div class="content d-flex flex-column justify-content-center h-100 text-justify">
@@ -112,9 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid historia-section" data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine" id="Historia">
+      <div class="container-fluid historia-section" data-aos="flip-up" id="Historia">
         <div class="row justify-content-center mt-articulo">
           <div class="col-lg-6 position-relative">
             <img src="https://i.pinimg.com/originals/99/13/05/991305e482c514e21d8c74c378173ead.gif" class="float-start rounde img-cabeza" id="" alt="...">
@@ -131,9 +128,7 @@
           </div> 
         </div>
       </div>
-      <div class="container-fluid historia-section mt-5" data-aos="fade-left"
-      data-aos-offset="500"
-      data-aos-duration="500">
+      <div class="container-fluid historia-section mt-5" data-aos="flip-down" id="Referencias">
         <div class="row justify-content-center mt-articulo">
           <div class="col-lg-6">
             <div class="content d-flex flex-column justify-content-center h-100 text-justify">
@@ -150,9 +145,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid historia-section" data-aos="fade-right"
-      data-aos-offset="300"
-      data-aos-easing="ease-in-sine" id="Plataformas">
+      <div class="container-fluid historia-section" data-aos="flip-up" id="Plataformas">
         <div class="row justify-content-center mt-articulo">
           <div class="col-lg-6 position-relative mt-4 ">
             <img src="https://img.itch.zone/aW1nLzc3OTI3MTAuZ2lm/original/3T8MQJ.gif" class="float-start rounde img-cabeza" id="" alt="...">
@@ -172,7 +165,7 @@
       <!--Aqui termina el contenido DE LA PAGINA-->
       <!--Aqui empieza el contenido del formulario-->
 
-      <div class="container d-flex justify-content-center align-items-center h-100 mt-form" data-aos="fade-up" id="Form">
+      <div class="container d-flex justify-content-center align-items-center h-100 mt-form" data-aos="fade-up" id="Form" data-aos-anchor-placement="top-bottom">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title text-center">Formulario de Registro</h5>
@@ -231,7 +224,7 @@
         </div>
         </div>
       </div>
-      </footer>
+    </footer>
   
     <script src="jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

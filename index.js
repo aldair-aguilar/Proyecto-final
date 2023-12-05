@@ -97,6 +97,9 @@ $(document).ready(function () {
    AOS.init();
 });
 
+{
+   AOS.init();
+}
 
 document.addEventListener("DOMContentLoaded", function () {
    AOS.init();
@@ -104,40 +107,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Formulario
 function registrar() {
-   // Obtener los valores del formulario
    var nombre = document.getElementById('nombre').value;
    var email = document.getElementById('email').value;
    var plataforma = document.getElementById('plataforma').value;
    var gamertag = document.getElementById('gamertag').value;
 
-   // Verificar si todos los campos están llenos
    if (nombre && email && plataforma && gamertag) {
-       // Mostrar alerta animada con mensaje de registro
-       showAlert('¡Registro exitoso para la beta!', 'success');
+      // Aquí puedes realizar las acciones de registro
+
+      // Mostrar alerta de registro exitoso
+      mostrarAlerta('¡Te has registrado para la beta!');
    } else {
-       // Mostrar alerta animada con mensaje de error
-       showAlert('Por favor, completa todos los campos.', 'danger');
+      // Mostrar alerta de que todos los campos son necesarios
+      mostrarAlerta('Por favor, completa todos los campos.');
    }
 }
 
-function showAlert(message, type) {
+function mostrarAlerta(mensaje) {
    // Crear elemento de alerta
-   var alertDiv = document.createElement('div');
-   alertDiv.className = 'alert alert-' + type + ' alert-dismissible fade show';
-   alertDiv.role = 'alert';
-   alertDiv.innerHTML = message +
-       '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
-       '<span aria-hidden="true">&times;</span></button>';
+   var alerta = document.createElement('div');
+   alerta.className = 'alert alert-success alert-dismissible fade show';
+   alerta.role = 'alert';
+   alerta.innerHTML = mensaje + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
 
-   // Agregar el alert al contenedor de alertas
-   document.getElementById('alertContainer').appendChild(alertDiv);
-
-   // Desaparecer después de 3 segundos (3000 milisegundos)
-   setTimeout(function () {
-       alertDiv.classList.add('fade');
-       alertDiv.classList.remove('show');
-       setTimeout(function () {
-           alertDiv.remove();
-       }, 1000);
-   }, 3000);
+   // Agregar alerta al contenedor
+   document.getElementById('alertContainer').appendChild(alerta);
 }
+
+AOS.init({
+   offset: 100, // Ajusta según sea necesario
+   duration: 1000 // Ajusta según sea necesario
+});
