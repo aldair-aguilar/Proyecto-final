@@ -214,3 +214,19 @@
     width: 100%;
     height: 100%;
   }
+
+  /* Estilo inicial del subrayado */
+.nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #8a2be2; /* Color morado */
+    transition: width 0.3s ease;
+  }
+  
+  /* Animación cuando el mouse pasa sobre la opción */
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
