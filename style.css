@@ -230,3 +230,18 @@
     width: 100%;
   }
   
+  /* Estilo inicial del subrayado en las opciones del dropdown */
+.dropdown-item::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #8a2be2; /* Color morado */
+    transition: width 0.3s ease;
+  }
+  
+  /* Animación cuando el mouse pasa sobre las opciones del dropdown */
+  .dropdown-item:hover::after {
+    width: 100%;
+  }
+  
